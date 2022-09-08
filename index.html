@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="date"></p>
+  <script>
+    var day = new Date().getDate();
+    var month = new Date().getMonth();
+    var year = new Date().getFullYear();
+    var months = [ "January", "February", "March", "April", "May", "June", 
+               "July", "August", "September", "October", "November", "December" ];
+           
+    monthName = months[month];
+    currentDate = monthName +' '+ day +', ' + year
+    document.getElementById("date").innerHTML = currentDate;
+  </script>
+  </body>
+</html>
